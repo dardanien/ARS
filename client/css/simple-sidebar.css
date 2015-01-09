@@ -1,0 +1,108 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+#wrapper {
+
+}
+
+#sidebar-wrapper {
+    z-index: 900;
+    position: fixed;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#search-wrapper {
+    z-index: 950;
+    position: fixed;
+    left: 200px;
+    width: 400px;
+    height: 100%;
+    overflow-y: auto;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#page-content-wrapper {
+    z-index: 1000;
+    position: absolute;
+    min-width: 100px;
+    left: 600px;
+    padding: 15px;
+    background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+#wrapper.toggled1 #sidebar-wrapper {
+    left: -200px;
+}
+
+#wrapper.toggled1 #search-wrapper {
+    left: 0px;
+}
+
+#wrapper.toggled1 #page-content-wrapper {
+    left: 400px;
+}
+
+#wrapper.toggled2 #sidebar-wrapper {
+    left: -200px;
+}
+#wrapper.toggled2 #search-wrapper {
+    left: -400px;
+}
+#wrapper.toggled2 #page-content-wrapper {
+    left: 0px;
+}
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 200px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 200px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}

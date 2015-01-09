@@ -1,0 +1,51 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.listcol, .objcol {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#page-content-wrapper {
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.navlist {
+    list-style-type:none;
+    padding-left: 15px;
+}
+
+#nav1 {
+    z-index: 950;
+    position: fixed;
+    background-color: #fff;
+}
+
+.nav2 {
+    float: left;
+}
+
+#form1 {
+    top: 30px;
+    position:relative;
+}
+
+#detailColumn {
+
+}
+
+.ars-btn {
+    float: right;
+}
+
+
