@@ -6,9 +6,40 @@
 </template>
 
 <template name="noSelection">
+  {{> noSelectionToolbar }}
   <p>No selection</p>
 </template>
 
+<template name="noSelectionToolbar">
+    <div id="nav1" class="btn-toolbar" role="toolbar" >
+    </div>
+</template>
+
 <template name="detailForm">
+  {{> detailEditToolbar }}
   {{> Template.dynamic template=templateName }}
+</template>
+
+<template name="detailToolbar">
+    <div id="nav1" class="btn-toolbar" role="toolbar" >
+        <div class="btn-group" role="group" aria-label="...">
+            <button id="menu-toggle2" type="button" class="btn btn-link">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </button>
+        </div>
+    </div>
+</template>
+
+<template name="detailEditToolbar">
+    <div id="nav1" class="btn-toolbar" role="toolbar" >
+        <div class="btn-group" role="group" aria-label="...">
+            <button id="menu-toggle2" type="button" class="btn btn-link">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </button>
+        </div>
+        <div class="btn-group pull-right" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">Ok</button>
+            <button type="button" class="btn btn-default">Cancel</button>
+        </div>
+    </div>
 </template>

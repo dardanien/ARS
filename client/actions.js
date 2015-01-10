@@ -8,5 +8,5 @@ $(document).ready(function () {
   $("#addDataObjectSet").click(function(e) {
     e.preventDefault();
     Session.set("tname", "noSelection");
-  });
+  }); 
 });
