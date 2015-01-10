@@ -10,5 +10,6 @@ $(document).ready(function () {
   $("#addDataObjectSet").click(function(e) {
     e.preventDefault();
     Session.set("detailPageName", "noSelection");
+    Session.set("editMode", false);
   }); 
 });
