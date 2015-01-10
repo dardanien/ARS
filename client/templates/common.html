@@ -16,7 +16,10 @@
 </template>
 
 <template name="detailForm">
-  {{> detailEditToolbar }}
+  {{#if editMode}}
+     {{> detailEditToolbar }}
+  {{else}}
+    {{> detailToolbar }}
   {{> Template.dynamic template=templateName }}
 </template>
 

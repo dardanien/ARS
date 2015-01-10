@@ -1,12 +1,14 @@
 $(document).ready(function () {
-  Session.set("tname", "noSelection");
+  Session.set("detailPageName", "noSelection");
+  Session.set("editMode", false);
   
   $("#addDataObject").click(function(e) {
     e.preventDefault();
-    Session.set("tname", "dataObject");
+    Session.set("detailPageName", "dataObject");
+    Session.set("editMode", true);
   });
   $("#addDataObjectSet").click(function(e) {
     e.preventDefault();
-    Session.set("tname", "noSelection");
+    Session.set("detailPageName", "noSelection");
   }); 
 });
