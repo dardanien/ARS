@@ -1,14 +1,12 @@
 
-
-
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 
 
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .listcol, .objcol {
@@ -17,36 +15,28 @@ body {
 }
 
 #page-content-wrapper {
-    padding-top: 0px;
-    padding-left: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
 }
 
 .navlist {
-    list-style-type:none;
-    padding-left: 15px;
+  list-style-type:none;
+  padding-left: 15px;
 }
 
 #nav1 {
-    z-index: 950;
-    position: fixed;
-    background-color: #fff;
+  z-index: 950;
+  position: fixed;
+  background-color: #fff;
 }
 
 .nav2 {
-    float: left;
-}
-
-
-
-#descriptionBlock
-{
-    top: 30px;
-    position:relative;
+  float: left;
 }
 
 #form2 {
   padding-top: 40px;  
-    width: 100%;
+  width: 100%;
   position:relative;
 
 }
@@ -56,7 +46,7 @@ body {
 }
 
 .ars-btn {
-    float: right;
+  float: right;
 }
 
 #noSelection {
@@ -67,23 +57,27 @@ body {
   resize: vertical;
 }
 
-#descriptionBlock {
+.expandableBlock
+{
+  top: 30px;
+  position:relative;
+}
+
+.expandableBlock {
   background-color: white;
 }
 
 /* ==========================================================================
-   Expander
-   ========================================================================== */
+Expander
+========================================================================== */
 
-#expander {
+.expander {
   position: relative;
   padding-bottom: 40px;
   z-index: 100;
 }
 
-
-
-#expander > hr {
+.expander > hr {
   position: absolute;
   border-color: black ;
   width: 100%;
@@ -91,7 +85,7 @@ body {
   z-index: 1;
 }
 
-#expander > button {
+.expander > button {
   z-index: 1000;
   position: absolute;
   background-color: white;
@@ -100,12 +94,11 @@ body {
   border: none;
 }
 
-
-#expander > button:hover   {
+.expander > button:hover   {
   color: blue;
 }
 
-#expander > button:hover, button:focus   {
+.expander > button:hover, button:focus   {
   border: none;
   outline: 0;
 }

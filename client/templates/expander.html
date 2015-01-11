@@ -1,9 +1,9 @@
 <template name="expander">
-  <div id="expander"> 
+  <div class="expander" style="left: {{offset}}px;"> 
     <hr width=100%> 
-    <button type="button" class="" data-toggle="collapse" data-target="#form1">
+    <button type="button" >
       <span class="glyphicon glyphicon-collapse-up"></span>
     </button>
-    <button style="left: 40px;" id="collapseButton" type="button" class="" data-toggle="collapse" data-target="#form1">Simple collapsible</button>
+    <button style="left: 40px;" id="collapseButton" type="button">{{title}}</button>
   </div>
 </template>
