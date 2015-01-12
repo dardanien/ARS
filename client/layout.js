@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var offset = 660;
+    var offset = 660; 
     var oldOffset = 0;
     resizeContent = function () {
         var size = window.outerWidth;
