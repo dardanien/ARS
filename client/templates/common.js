@@ -13,6 +13,6 @@ Template.detailForm.helpers ({
 
 
 Template.detailForm.events ({
-  "click #addDataObject": function(event) {
+  "click #addDataObject": function( event) {
   }
 });
